@@ -4,6 +4,8 @@ STUDENT is just an abstract base class. PSTUDENT, VSTUDENT, and HSTUDENT (which 
 
 The classes with "CalibrationTrial" in them are basically objects that represent the "environment" the students are in. "CalibrationTrialNormal" refers to a simulation of a normal school environment, while "CalibrationTrialSAR" refers to a simulation in a household-like environment with no vaccination and no student absences (for the purposes of evaluating the secondary attack rate).
 
-Finally, RiskFinder is just a class that gives the total risk of infection as a function of the unvaccinated proportion. RiskFinder uses all the other classes to give its result.
+The "Calibration" classes merely test values of I (number of external infection attempts per student per day) and S (number of student-to-student infection attempts per student per day) by using the "CalibrationTrial" classes. The best-fitting values of I and S are then used in RiskFinder.
+
+RiskFinder is just a class that gives the total risk of infection as a function of the unvaccinated proportion, using the results from the "Calibration" classes.
 
 More specific details can be found in the code itself.
