@@ -1,4 +1,4 @@
-This code was written for the second Ph 011 hurdle of 2015-16.
+Code written in 2015-16 for a disease simulation exercise.
 
 STUDENT is just an abstract base class. PSTUDENT, VSTUDENT, and HSTUDENT (which represent students that simulate pertussis, varicella, and hepatitis b, respectively), extend from this base class.
 
